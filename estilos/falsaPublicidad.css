@@ -1,0 +1,78 @@
+
+h2{
+  text-align: center;
+  margin-top: 10px;
+
+  
+}
+
+
+/* Estilos del cartel luminoso */
+.cartel {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 40px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  position: relative;
+  animation: parpadeo 1.5s infinite alternate, resplandor 1.2s infinite alternate;
+}
+
+/* Efecto parpadeo de la luz */
+@keyframes parpadeo {
+  0% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 75px #ff00ff;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+
+
+.rebaja {
+    text-decoration: line-through;
+    color:blue;
+}
+
+
+
+
+.slider-h {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    background-color: #f8f3f3;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+  }
+  .slider-h .slide-track-h {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(700px * 8);
+  }
+  .slider-h .slide-h {
+    width: 600px;
+  }
+  .slider-h .slide-h img {
+    width: 100%;
+  }
+  @keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-700px * 4));
+      transform: translateX(calc(-700px * 4));
+    }
+
+
+  
+  }
